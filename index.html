@@ -28,7 +28,7 @@
       overflow-x: hidden;
     }
 
-    /* ===== NAV ===== */
+   
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -140,7 +140,7 @@
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
-    /* ===== HERO ===== */
+   
     .hero {
       min-height: 100vh;
       display: flex;
@@ -304,7 +304,7 @@
       100%{ left:100%; }
     }
 
-    /* ===== SECTIONS ===== */
+  
     section { padding: 120px 60px; }
 
     .section-label {
@@ -394,7 +394,7 @@
       line-height: 1.7;
     }
 
-    /* ABOUT */
+  
     .about-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -451,7 +451,7 @@
       letter-spacing: 0.08em;
     }
 
-    /* WORK */
+   
     #work { background: var(--surface); }
 
     .work-grid {
@@ -515,7 +515,7 @@
       line-height: 1.6;
     }
 
-    /* CONTACT */
+    
     .contact-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -628,40 +628,8 @@
       flex-shrink: 0;
     }
 
-    /* FOOTER */
-    footer {
-      padding: 40px 60px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
 
-    footer p {
-      color: var(--muted);
-      font-size: 0.875rem;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 32px;
-    }
-
-    .footer-links a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.875rem;
-      transition: color 0.3s;
-    }
-
-    .footer-links a:hover { color: var(--accent); }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ===== RESPONSIVE ===== */
+    
     @media (max-width: 900px) {
       nav { padding: 20px 24px; }
       nav.scrolled { padding: 14px 24px; }
@@ -700,7 +668,7 @@
 </head>
 <body>
 
-  <!-- NAV -->
+
   <nav id="navbar">
     <a href="#" class="nav-logo">Nexus <span></span></a>
     <ul class="nav-links" id="navLinks">
@@ -713,7 +681,7 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+
   <section class="hero" id="home">
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
@@ -731,7 +699,7 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  
   <section id="services">
     <div class="section-label">What We Do</div>
     <h2 class="section-title">Services built for<br>modern brands</h2>
@@ -764,7 +732,7 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+
   <section id="about">
     <div class="about-layout">
       <div class="about-visual">
@@ -783,7 +751,7 @@
 
 
 
-  <!-- CONTACT -->
+
   <section id="contact">
     <div class="contact-layout">
       <div>
@@ -791,11 +759,11 @@
         <div class="contact-form">
           <div class="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="Alex Johnson" />
+            <input type="text" placeholder="xyz" />
           </div>
           <div class="form-group">
             <label>Email Address</label>
-            <input type="email" placeholder="alex@example.com" />
+            <input type="email" placeholder="xyz@example.com" />
           </div>
           <div class="form-group">
             <label>Your Message</label>
@@ -806,7 +774,7 @@
       </div>
       <div class="contact-info">
         <h3>Let's build something great together.</h3>
-        <p>We typically respond within 24 hours. For urgent requests, you can reach us directly via email or phone.</p>
+      
         <div class="contact-links">
           <a href="mailto:hello@nexusstudio.com" class="contact-link">
             <div class="contact-link-icon">✉️</div>
@@ -814,36 +782,25 @@
           </a>
           <a href="tel:+11234567890" class="contact-link">
             <div class="contact-link-icon">📞</div>
-            +1 (123) 456-7890
+            +91 345847692
           </a>
           <a href="#" class="contact-link">
             <div class="contact-link-icon">📍</div>
-            New York, NY — Remote friendly
+            New Delhi
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Nexus Studio. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Dribbble</a>
-      <a href="#">GitHub</a>
-    </div>
-  </footer>
 
   <script>
-    // Scroll-based nav
+    
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    // Mobile hamburger
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('navLinks');
     hamburger.addEventListener('click', () => {
@@ -851,7 +808,7 @@
       navLinks.classList.toggle('open');
     });
 
-    // Close menu on link click
+   
     navLinks.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         hamburger.classList.remove('open');
@@ -859,7 +816,7 @@
       });
     });
 
-    // Contact form
+   
     function handleSubmit() {
       const btn = document.querySelector('.btn-submit');
       btn.textContent = '✓ Message Sent!';
@@ -870,7 +827,7 @@
       }, 3000);
     }
 
-    // Scroll reveal
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
