@@ -42,11 +42,15 @@
 
     nav.scrolled {
       padding: 16px 60px;
-      background: rgba(10,10,15,0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(232,255,107,0.12);
-      box-shadow: 0 4px 40px rgba(0,0,0,0.4);
+      background: rgba(123, 110, 246, 0.15);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1.5px solid rgba(232,255,107,0.4);
+      box-shadow: 0 4px 40px rgba(123,110,246,0.18);
+    }
+
+    nav.scrolled .nav-logo {
+      color: var(--accent);
     }
 
     .nav-logo {
@@ -632,7 +636,7 @@
     
     @media (max-width: 900px) {
       nav { padding: 20px 24px; }
-      nav.scrolled { padding: 14px 24px; }
+      nav.scrolled { padding: 14px 24px; background: rgba(123, 110, 246, 0.15); }
 
       .nav-links {
         position: fixed;
