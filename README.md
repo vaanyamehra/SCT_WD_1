@@ -1,10 +1,5 @@
 # SCT_WD_1 — Nexus Digital Studio Landing Page
-
 A modern, fully responsive landing page for a fictional digital studio called **Nexus**, built with pure HTML and CSS (no frameworks).
-
-## 🌐 Live Preview
-
-
 
 ## Task Description
 
